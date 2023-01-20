@@ -8,7 +8,7 @@
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     width: 90vw;
@@ -23,6 +23,8 @@
 .div7 { grid-area: 5 / 1 / 6 / 2; }
 .div8 { grid-area: 5 / 3 / 6 / 4; }
 .div9 { grid-area: 6 / 2 / 7 / 3; }
+.div10 { grid-area: 7 / 1 / 8 / 2; }
+.div11 { grid-area: 7 / 3 / 8 / 4; }
 
 .parent{
     div{
@@ -44,7 +46,7 @@
 .parentA {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     width: 90vw;
@@ -59,10 +61,37 @@
 .div7A { grid-area: 5 / 1 / 6 / 2; }
 .div8A { grid-area: 5 / 3 / 6 / 4; }
 .div9A { grid-area: 6 / 2 / 7 / 3; }
-.div10A { grid-area: 7 / 1 / 8 / 2; }
-.div11A { grid-area: 7 / 3 / 8 / 4; }
 
 .parentA{
+    div{
+        @include divs;
+        border: solid 3px darkblue;
+        border-radius: 10px;
+        padding: 5%;
+        text-align: center;
+        background-color: lightskyblue;
+    }
+}
+
+/* DIA TRES */
+
+.parentB {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 90vw;
+}
+
+.div1B { grid-area: 1 / 1 / 2 / 2; }
+.div2B { grid-area: 1 / 3 / 2 / 4; }
+.div3B { grid-area: 2 / 2 / 3 / 3; }
+.div4B { grid-area: 3 / 1 / 4 / 2; }
+.div5B { grid-area: 3 / 3 / 4 / 4; }
+
+
+.parentB{
     div{
         @include divs;
         border: solid 3px darkblue;

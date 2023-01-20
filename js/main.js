@@ -1,3 +1,4 @@
+const comenzar = document.getElementById('comenzar')
 const dia = document.getElementById('dia')
 const crono = document.getElementById('crono')
 const diaUno = document.getElementById('diaUno')
@@ -22,7 +23,23 @@ let maps = document.getElementById('maps')
 let pregunta = document.getElementById('pregunta')
 
 function iniciar() {
+    dia.style.display = 'none'
     crono.style.display = 'none'
+    comenzar.innerHTML = `
+        <div class="imgInicio">
+            <img src="./fotos/romita.jpg">
+        </div>
+        <div class="divBtnComenzar">
+            <button id="btnComenzar">Comenzar</button>
+        </div>
+    `
+    const btnComenzar = document.getElementById('btnComenzar')
+    btnComenzar.addEventListener('click', seleccionarDias)
+}
+
+function seleccionarDias() {
+    comenzar.style.display = 'none'
+    dia.style.display = 'flex'
 }
 
 function dia1() {
@@ -49,7 +66,7 @@ function dia3() {
     diaUno.style.display = 'none'
     diaDos.style.display = 'none'
     diaTres.style.display = 'flex'
-    locacion.style.display = 'none'
+    lugarcito.style.display = 'none'
 }
 
 function dondeDU(lugar) {
@@ -64,43 +81,43 @@ function dondeDU(lugar) {
     } else if (lugar == 2) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/mBor.png">
+                <img class="imgLugarcito" src="./fotos/imp.png">
             </div>
         `
     } else if (lugar == 3) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/ppp.png">
+                <img class="imgLugarcito" src="./fotos/mBor.png">
             </div>
         `
     } else if (lugar == 4) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/pEsp.png">
+                <img class="imgLugarcito" src="./fotos/ppp.png">
             </div>
         `
     } else if (lugar == 5) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/vdC.png">
+                <img class="imgLugarcito" src="./fotos/pEsp.png">
             </div>
         `
     } else if (lugar == 6) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/di.png">
+                <img class="imgLugarcito" src="./fotos/vdC.png">
             </div>
         `
     } else if (lugar == 7) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/pan.png">
+                <img class="imgLugarcito" src="./fotos/di.png">
             </div>
         `
     } else if (lugar == 8) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/navo.png">
+                <img class="imgLugarcito" src="./fotos/pan.png">
             </div>
         `
     } else if (lugar == 9) {
@@ -112,61 +129,97 @@ function dondeDU(lugar) {
     } else if (lugar == 10) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/navo.png">
             </div>
         `
     } else if (lugar == 11) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/delle.png">
             </div>
         `
     } else if (lugar == 12) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/bas.png">
             </div>
         `
     } else if (lugar == 13) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/jar.png">
             </div>
         `
     } else if (lugar == 14) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/six.png">
             </div>
         `
     } else if (lugar == 15) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/piz.png">
             </div>
         `
     } else if (lugar == 16) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/sana.png">
             </div>
         `
     } else if (lugar == 17) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/col.png">
             </div>
         `
     } else if (lugar == 18) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/hil.png">
             </div>
         `
     } else if (lugar == 19) {
         lugarcito.innerHTML = `
             <div class="divLugarcito">
-                <img class="imgLugarcito" src="./fotos/gio.png">
+                <img class="imgLugarcito" src="./fotos/for.png">
+            </div>
+        `
+    } else if (lugar == 20) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/tras.png">
+            </div>
+        `
+    } else if (lugar == 21) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/mas.png">
+            </div>
+        `
+    } else if (lugar == 22) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/no.png">
+            </div>
+        `
+    } else if (lugar == 23) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/tra.png">
+            </div>
+        `
+    } else if (lugar == 24) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/dis.png">
+            </div>
+        `
+    } else if (lugar == 25) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/fel.png">
             </div>
         `
     }

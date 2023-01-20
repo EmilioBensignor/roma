@@ -7,7 +7,7 @@
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   width: 90vw;
@@ -49,6 +49,14 @@
   grid-area: 6/2/7/3;
 }
 
+.div10 {
+  grid-area: 7/1/8/2;
+}
+
+.div11 {
+  grid-area: 7/3/8/4;
+}
+
 .parent div {
   display: flex;
   justify-content: center;
@@ -68,7 +76,7 @@
 .parentA {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   width: 90vw;
@@ -110,15 +118,48 @@
   grid-area: 6/2/7/3;
 }
 
-.div10A {
-  grid-area: 7/1/8/2;
-}
-
-.div11A {
-  grid-area: 7/3/8/4;
-}
-
 .parentA div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px darkblue;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: center;
+  background-color: lightskyblue;
+}
+
+/* DIA TRES */
+.parentB {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 90vw;
+}
+
+.div1B {
+  grid-area: 1/1/2/2;
+}
+
+.div2B {
+  grid-area: 1/3/2/4;
+}
+
+.div3B {
+  grid-area: 2/2/3/3;
+}
+
+.div4B {
+  grid-area: 3/1/4/2;
+}
+
+.div5B {
+  grid-area: 3/3/4/4;
+}
+
+.parentB div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,6 +214,33 @@ header div a img {
 }
 #dia button img {
   width: 50vw;
+}
+
+.imgInicio {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 10%;
+}
+.imgInicio img {
+  width: 90vw;
+}
+
+.divBtnComenzar {
+  display: flex;
+  justify-content: center;
+}
+
+#btnComenzar {
+  background-color: #239BF7;
+  border: solid black 3px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #3055FC;
+  padding: 2%;
+  height: 20vw;
+  width: 50vw;
+  font-size: 8vw;
+  font-family: cursive;
 }
 
 /*# sourceMappingURL=style.css.map */

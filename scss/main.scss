@@ -35,3 +35,29 @@ header{
         }
     }
 }
+
+.imgInicio{
+    @include centrar;
+    width: 100vw;
+    margin-bottom: 10%;
+    img{
+        width: 90vw;
+    }
+}
+
+.divBtnComenzar{
+    display: flex;
+    justify-content: center;
+}
+
+#btnComenzar{
+    background-color: #239BF7;
+    border: solid black 3px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #3055FC;
+    padding: 2%;
+    height: 20vw;
+    width: 50vw;
+    font-size: 8vw;
+    font-family: cursive;
+}
