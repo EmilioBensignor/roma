@@ -30,7 +30,7 @@ function iniciar() {
             <img src="./fotos/romita.jpg">
         </div>
         <div class="divBtnComenzar">
-            <button id="btnComenzar">Comenzar</button>
+            <button class="colorBtn" id="btnComenzar">Comenzar</button>
         </div>
     `
     const btnComenzar = document.getElementById('btnComenzar')
