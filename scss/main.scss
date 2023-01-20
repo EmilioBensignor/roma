@@ -1,0 +1,37 @@
+@import "sass2/mixin";
+@import "./partials/grid.scss";
+@import "./partials/lugarcito.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-image: url('../fotos/body.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    @include centrar;
+    margin-bottom: 10%;
+    div a{
+        img{
+            width: 100vw;
+            border-bottom: solid darkblue 4px;
+        }
+    }
+}
+
+#dia{
+    @include c-columna;
+    button{
+        background: none;
+        border: none;
+        img{
+            width: 50vw;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+#crono {
+  display: flex;
+  justify-content: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 90vw;
+}
+
+.div1 {
+  grid-area: 1/1/2/2;
+}
+
+.div2 {
+  grid-area: 1/3/2/4;
+}
+
+.div3 {
+  grid-area: 2/2/3/3;
+}
+
+.div4 {
+  grid-area: 3/1/4/2;
+}
+
+.div5 {
+  grid-area: 3/3/4/4;
+}
+
+.div6 {
+  grid-area: 4/2/5/3;
+}
+
+.div7 {
+  grid-area: 5/1/6/2;
+}
+
+.div8 {
+  grid-area: 5/3/6/4;
+}
+
+.div9 {
+  grid-area: 6/2/7/3;
+}
+
+.parent div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px darkblue;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: center;
+  background-color: lightskyblue;
+}
+
+.comida {
+  color: blueviolet;
+}
+
+.divLugarcito {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 8% 0 15% 0;
+}
+
+.imgLugarcito {
+  width: 90vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-image: url("../fotos/body.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+header div a img {
+  width: 100vw;
+  border-bottom: solid darkblue 4px;
+}
+
+#dia {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#dia button {
+  background: none;
+  border: none;
+}
+#dia button img {
+  width: 50vw;
+}
+
+/*# sourceMappingURL=style.css.map */
