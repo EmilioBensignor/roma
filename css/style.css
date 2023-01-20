@@ -3,6 +3,7 @@
   justify-content: center;
 }
 
+/* DIA UNO */
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -63,6 +64,7 @@
   color: blueviolet;
 }
 
+/* DIA DOS */
 .divLugarcito {
   display: flex;
   justify-content: center;

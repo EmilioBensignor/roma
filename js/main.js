@@ -62,7 +62,53 @@ function dondeDU(lugar) {
             </div>
         `
     } else if (lugar == 2) {
-        
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/mBor.png">
+            </div>
+        `
+    } else if (lugar == 3) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/ppp.png">
+            </div>
+        `
+    } else if (lugar == 4) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/pEsp.png">
+            </div>
+        `
+    } else if (lugar == 5) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/vdC.png">
+            </div>
+        `
+    } else if (lugar == 6) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/di.png">
+            </div>
+        `
+    } else if (lugar == 7) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/pan.png">
+            </div>
+        `
+    } else if (lugar == 8) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/navo.png">
+            </div>
+        `
+    } else if (lugar == 9) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
     }
 }
 
