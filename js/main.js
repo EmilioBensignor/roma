@@ -109,6 +109,66 @@ function dondeDU(lugar) {
                 <img class="imgLugarcito" src="./fotos/gio.png">
             </div>
         `
+    } else if (lugar == 10) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 11) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 12) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 13) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 14) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 15) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 16) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 17) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 18) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
+    } else if (lugar == 19) {
+        lugarcito.innerHTML = `
+            <div class="divLugarcito">
+                <img class="imgLugarcito" src="./fotos/gio.png">
+            </div>
+        `
     }
 }
 
